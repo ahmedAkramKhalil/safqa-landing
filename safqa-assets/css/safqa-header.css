@@ -1,0 +1,227 @@
+/**
+ * Safqa Header Styles - Clean & Simple
+ * Fixed top bar that's ALWAYS visible
+ */
+
+/* ==========================================
+   HEADER - FIXED TOP BAR
+   ========================================== */
+
+.safqa-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--safqa-primary);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    padding: 0;
+}
+
+.safqa-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    gap: 20px;
+}
+
+/* Logo */
+.safqa-logo-wrapper {
+    flex-shrink: 0;
+}
+
+.safqa-logo-wrapper .safqa-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navigation */
+.safqa-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+.safqa-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+.safqa-nav .nav-link:hover,
+.safqa-nav .nav-link.active {
+    color: var(--safqa-secondary);
+}
+
+.safqa-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--safqa-secondary);
+}
+
+/* Header Actions */
+.safqa-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+/* Language Switcher */
+.safqa-lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.safqa-lang-switcher .lang-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.safqa-lang-switcher .lang-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.safqa-lang-switcher .lang-link.active {
+    background: var(--safqa-gradient);
+    color: var(--safqa-primary);
+}
+
+/* Download Button */
+.safqa-btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--safqa-gradient);
+    color: var(--safqa-primary);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(248, 197, 69, 0.3);
+}
+
+.safqa-btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(248, 197, 69, 0.4);
+    color: var(--safqa-primary);
+}
+
+.safqa-btn-download i {
+    font-size: 16px;
+}
+
+/* Mobile Toggle */
+.safqa-mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.safqa-mobile-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.safqa-mobile-toggle:hover span {
+    background: var(--safqa-secondary);
+}
+
+/* ==========================================
+   RESPONSIVE - MOBILE & TABLET
+   ========================================== */
+
+@media (max-width: 1200px) {
+    .safqa-nav {
+        gap: 20px;
+    }
+
+    .safqa-nav .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    .safqa-nav {
+        display: none;
+    }
+
+    .safqa-mobile-toggle {
+        display: flex;
+    }
+
+    .safqa-header-content {
+        padding: 12px 20px;
+    }
+
+    .safqa-btn-download span {
+        display: none;
+    }
+
+    .safqa-btn-download {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .safqa-logo-wrapper .safqa-logo {
+        height: 40px;
+    }
+
+    .safqa-lang-switcher .lang-link {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   MOBILE MENU ACTIVE STATE
+   ========================================== */
+
+/* Ensure mobile menu appears when active class is added */
+.side-menu2.active {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure overlay appears when active */
+.overlay2.active {
+    visibility: visible !important;
+    opacity: 1 !important;
+}

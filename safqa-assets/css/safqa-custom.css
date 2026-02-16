@@ -1,0 +1,764 @@
+/*
+ * Safqa Custom Styles
+ * Brand Colors: #18353A (Dark Teal), #F8C545 (Yellow), #CA952D (Gold), #F3E8EE (Light)
+ */
+
+/* ============================================
+   SAFQA BRAND COLORS
+   ============================================ */
+:root {
+    --safqa-primary: #18353A;
+    --safqa-secondary: #F8C545;
+    --safqa-gold: #CA952D;
+    --safqa-light: #F3E8EE;
+    --safqa-dark: #0d1f23;
+    --safqa-gradient: linear-gradient(135deg, #F8C545 0%, #CA952D 100%);
+}
+
+/* Override theme colors with Safqa brand */
+body {
+    --clr-theme-primary: var(--safqa-primary);
+    --clr-theme-secondary: var(--safqa-secondary);
+}
+
+/* Logo styling moved to safqa-header.css for header */
+/* Keep only footer logo styles here */
+
+/* Logo in footer */
+.footer-logo img {
+    background: transparent !important;
+    mix-blend-mode: normal;
+    max-height: 80px !important;
+    height: 80px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    margin-bottom: 20px !important;
+}
+
+/* Primary button styling with Safqa colors */
+.ibt-btn-secondary,
+.safqa-btn-primary {
+    background: var(--safqa-gradient) !important;
+    color: var(--safqa-primary) !important;
+    font-weight: 600;
+    border: none !important;
+}
+
+.ibt-btn-secondary:hover,
+.safqa-btn-primary:hover {
+    background: var(--safqa-gold) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(248, 197, 69, 0.3);
+}
+
+/* Outline button */
+.safqa-btn-outline {
+    background: transparent !important;
+    border: 2px solid var(--safqa-secondary) !important;
+    color: var(--safqa-secondary) !important;
+}
+
+.safqa-btn-outline:hover {
+    background: var(--safqa-secondary) !important;
+    color: var(--safqa-primary) !important;
+}
+
+/* Gradient text - Safqa style */
+.gradient-title span,
+.safqa-gradient-text {
+    background: var(--safqa-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Section titles - Larger sizes */
+.title-area h2,
+.title-area .gradient-title,
+section h2,
+section h3.section-title {
+    font-size: 52px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+.title-area .sub-title,
+section .sub-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+@media (max-width: 991px) {
+    .title-area h2,
+    .title-area .gradient-title,
+    section h2 {
+        font-size: 38px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .title-area h2,
+    .title-area .gradient-title,
+    section h2 {
+        font-size: 32px !important;
+    }
+}
+
+/* Hero section customization - Following theme style */
+.hero-style1 {
+    background-color: var(--safqa-primary);
+    padding-top: 0; /* No extra padding - header has fixed position */
+}
+
+.hero-style1 .hero-info {
+    padding: 60px 0 60px; /* Reduced top padding */
+}
+
+.hero-style1 .hero-title .gradient-title {
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.hero-style1 .hero-title .gradient-title span {
+    background: var(--safqa-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-style1 .hero-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-style1 .video-banner {
+    background: linear-gradient(180deg, var(--safqa-primary) 0%, rgba(24, 53, 58, 0.95) 100%);
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero-style1 .video-banner .banner-content {
+    text-align: center;
+}
+
+.hero-style1 .video-banner .sub-title {
+    color: var(--safqa-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hero-style1 .video-banner .title2 {
+    font-size: 90px;
+    font-weight: 800;
+    background: var(--safqa-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    line-height: 1;
+}
+
+.hero-style1 .video-banner p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* Hero Image - Maintain Aspect Ratio */
+.hero-image img {
+    max-width: 550px;
+    max-height: 550px;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+    display: inline-block;
+}
+
+/* Responsive hero */
+@media (max-width: 991px) {
+    .hero-style1 .hero-title .gradient-title {
+        font-size: 42px;
+    }
+
+    .hero-style1 .video-banner .title2 {
+        font-size: 60px;
+    }
+
+    .hero-image img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-style1 .hero-title .gradient-title {
+        font-size: 36px;
+    }
+
+    .hero-style1 .video-banner .title2 {
+        font-size: 48px;
+    }
+
+    .hero-image img {
+        max-width: 320px;
+        max-height: 320px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-image img {
+        max-width: 260px;
+        max-height: 260px;
+    }
+}
+
+/* Feature cards with Safqa styling */
+.safqa-feature-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #f5f5f5;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.safqa-feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--safqa-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.safqa-feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(24, 53, 58, 0.12);
+    border-color: var(--safqa-secondary);
+}
+
+.safqa-feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.safqa-feature-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 25px;
+    background: var(--safqa-gradient);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    color: var(--safqa-primary);
+    transition: all 0.3s ease;
+}
+
+.safqa-feature-card:hover .safqa-feature-icon {
+    transform: rotateY(360deg);
+}
+
+.safqa-feature-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--safqa-primary);
+    transition: color 0.3s ease;
+}
+
+.safqa-feature-card:hover h4 {
+    color: var(--safqa-gold);
+}
+
+.safqa-feature-card p {
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* App download section */
+.safqa-download-section {
+    background: var(--safqa-primary);
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.safqa-download-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: var(--safqa-gradient);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.safqa-download-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.safqa-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    color: var(--safqa-primary);
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.safqa-download-btn:hover {
+    background: var(--safqa-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.safqa-download-btn i {
+    font-size: 32px;
+}
+
+.safqa-download-btn .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.safqa-download-btn .btn-text small {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.safqa-download-btn .btn-text span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Stats section */
+.safqa-stats {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+.safqa-stat-item {
+    text-align: center;
+}
+
+.safqa-stat-item .number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--safqa-secondary);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.safqa-stat-item .label {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Partner logos section */
+.safqa-partners {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.safqa-partners .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.safqa-partners .partner-logo {
+    text-align: center;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.safqa-partners .partner-logo:hover {
+    opacity: 1;
+}
+
+.safqa-partners .partner-logo img {
+    max-height: 50px;
+    width: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.safqa-partners .partner-logo:hover img {
+    filter: grayscale(0%);
+}
+
+/* Footer customization */
+.footer-style1 {
+    background-color: var(--safqa-dark);
+}
+
+.footer-style1 .footer-logo img {
+    max-height: 80px !important;
+    height: 80px !important;
+}
+
+/* Fix footer title sizes */
+.footer-style1 .footer-widget h4.title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px;
+}
+
+/* Fix footer text colors for better contrast */
+.footer-style1 .about-widget p {
+    color: rgba(255, 255, 255, 0.7) !important;
+    line-height: 1.8;
+}
+
+.footer-style1 .footer-links ul li a {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.footer-style1 .footer-links ul li a:hover {
+    color: var(--safqa-secondary) !important;
+}
+
+.footer-style1 .footer-links ul li {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Footer Contact Icons */
+.footer-style1 .footer-links ul li i {
+    color: var(--safqa-secondary);
+    font-size: 14px;
+}
+
+.footer-style1 .footer-links ul li a i {
+    transition: transform 0.3s ease;
+}
+
+.footer-style1 .footer-links ul li a:hover i {
+    transform: scale(1.1);
+}
+
+/* Language switcher */
+.lang-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.lang-switcher a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.lang-switcher a.active {
+    background: var(--safqa-gradient);
+    color: var(--safqa-primary);
+}
+
+.lang-switcher a:hover {
+    background: rgba(248, 197, 69, 0.2);
+}
+
+/* Header button styling */
+.btn-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-box .ibt-btn {
+    padding: 12px 24px !important;
+    font-size: 15px !important;
+    white-space: nowrap;
+}
+
+[dir="rtl"] .lang-switcher {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+/* Header styles moved to safqa-header.css for clean separation */
+
+/* ============================================
+   RTL (RIGHT-TO-LEFT) SUPPORT FOR ARABIC
+   ============================================ */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .header-logo {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] .main-menu ul {
+    text-align: right;
+}
+
+[dir="rtl"] .main-menu ul li {
+    float: right;
+}
+
+[dir="rtl"] .btn-box {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-title h1 {
+    text-align: right;
+}
+
+[dir="rtl"] .hero-content {
+    text-align: right;
+}
+
+[dir="rtl"] .hero-content p {
+    text-align: right;
+}
+
+[dir="rtl"] .safqa-feature-card {
+    text-align: center;
+}
+
+[dir="rtl"] .safqa-download-buttons {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .safqa-download-btn .btn-text {
+    align-items: flex-end;
+}
+
+[dir="rtl"] .safqa-stats {
+    direction: rtl;
+}
+
+[dir="rtl"] .row {
+    direction: rtl;
+}
+
+[dir="rtl"] .col-lg-6,
+[dir="rtl"] .col-lg-4,
+[dir="rtl"] .col-lg-3,
+[dir="rtl"] .col-md-6 {
+    float: right;
+}
+
+/* RTL Icons */
+[dir="rtl"] .icon-arrow-top {
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] i.fa-chevron-right {
+    transform: scaleX(-1);
+}
+
+/* Arabic Font Support - Use Cairo Only */
+[dir="rtl"] body,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] p,
+[dir="rtl"] a,
+[dir="rtl"] span,
+[dir="rtl"] li,
+[dir="rtl"] div {
+    font-family: 'Cairo', sans-serif !important;
+}
+
+/* Mobile RTL adjustments */
+@media (max-width: 991px) {
+    [dir="rtl"] .side-menu2 ul {
+        text-align: right;
+    }
+
+    [dir="rtl"] .menu-contact {
+        text-align: right;
+    }
+
+    [dir="rtl"] .safqa-download-buttons {
+        justify-content: center;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .safqa-stats {
+        gap: 40px;
+    }
+
+    .safqa-stat-item .number {
+        font-size: 36px;
+    }
+
+    .safqa-download-buttons {
+        flex-direction: column;
+    }
+
+    .safqa-download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    [dir="rtl"] .safqa-download-btn .btn-text {
+        align-items: center;
+    }
+}
+
+/* ============================================
+   SCREENSHOTS SECTION STYLES
+   ============================================ */
+
+.safqa-screenshots-wrapper {
+    overflow: visible;
+    position: relative;
+}
+
+.safqa-screenshots-slider {
+    padding: 20px 50px;
+    overflow: visible;
+}
+
+.safqa-screenshots-slider .swiper-wrapper {
+    align-items: center;
+}
+
+.safqa-screenshots-slider .swiper-slide {
+    height: auto;
+}
+
+/* Phone Frame for Screenshots */
+.phone-frame {
+    position: relative;
+}
+
+.phone-frame img {
+    aspect-ratio: 9/19.5;
+    object-fit: cover;
+}
+
+.screenshot-item {
+    transition: transform 0.3s ease;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-10px);
+}
+
+.screenshot-item:hover .phone-frame img {
+    box-shadow: 0 30px 80px rgba(0,0,0,0.25) !important;
+    transform: scale(1.02);
+}
+
+.screenshot-item img {
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.screenshot-item:hover img {
+    box-shadow: 0 30px 80px rgba(0,0,0,0.2) !important;
+}
+
+/* Swiper Pagination Customization */
+.safqa-screenshots-slider .swiper-pagination-bullet {
+    background: var(--safqa-primary);
+    opacity: 0.3;
+    width: 12px;
+    height: 12px;
+}
+
+.safqa-screenshots-slider .swiper-pagination-bullet-active {
+    background: var(--safqa-gradient);
+    opacity: 1;
+}
+
+/* Swiper Navigation Arrows */
+.safqa-arrow-prev,
+.safqa-arrow-next {
+    transition: all 0.3s ease;
+}
+
+.safqa-arrow-prev:hover,
+.safqa-arrow-next:hover {
+    background: var(--safqa-gradient) !important;
+    transform: scale(1.1);
+}
+
+.safqa-arrow-prev::after,
+.safqa-arrow-next::after {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* RTL Support for Arrows */
+[dir="rtl"] .safqa-arrow-prev {
+    left: auto;
+    right: -25px;
+}
+
+[dir="rtl"] .safqa-arrow-next {
+    right: auto;
+    left: -25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .safqa-screenshots-slider {
+        padding: 20px 0;
+    }
+
+    .safqa-arrow-prev,
+    .safqa-arrow-next {
+        display: none;
+    }
+
+    .screenshot-item h4 {
+        font-size: 18px !important;
+    }
+
+    .screenshot-item p {
+        font-size: 14px !important;
+    }
+}

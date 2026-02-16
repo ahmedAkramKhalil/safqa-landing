@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفقة - نظام متكامل لإدارة الفواتير والمدفوعات مع مطابقة ذكية للتحويلات البنكية. مصمم خصيصاً للتجار وأصحاب المحلات في فلسطين - يعمل بدون إنترنت بدقة 95%">
+    <title>صفقة - نظام إدارة المبيعات والمدفوعات</title>
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="safqa-assets/images/safqa-logo.png">
+
+    <!-- Arabic Font - Cairo Only -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Load Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- fontello font css -->
+    <link rel="stylesheet" href="assets/css/plugins/fontello-enqueue.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontello-icons.css">
+
+    <!-- Bootstrap and theme CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Safqa Custom CSS -->
+    <link rel="stylesheet" href="safqa-assets/css/safqa-custom.css">
+    <link rel="stylesheet" href="safqa-assets/css/safqa-header.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+</head>
+
+<body class="safqa-page" style="padding-top: 80px;">
+    <div class="wrapper">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="loader">
+                <img src="safqa-assets/images/safqa-logo.png" alt="جاري التحميل...">
+            </div>
+        </div>
+        <!-- End Preloader -->
+
+        <!-- Mobile Menu -->
+        <div data-menu="mobileMenu" class="side-menu2">
+            <div class="menu-btns">
+                <button id="mobileCloseBtn2" class="close-btn"></button>
+            </div>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#screenshots">لقطات الشاشة</a></li>
+                <li><a href="#pricing">الأسعار</a></li>
+                <li><a href="#download">تحميل التطبيق</a></li>
+                <li><a href="#about">من نحن</a></li>
+            </ul>
+            <div class="menu-contact">
+                <span>تواصل معنا</span>
+                <a href="mailto:info@joinsafqa.com" class="gmail">info@joinsafqa.com</a>
+            </div>
+            <div class="menu-links">
+                <span>تابعنا:</span>
+                <ul class="social-icon">
+                    <li><a href="#" title="فيسبوك"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" title="تويتر"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" title="إنستغرام"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" title="سناب شات"><i class="fab fa-snapchat-ghost"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Overlay for Mobile Menu -->
+        <div class="overlay2"></div>
+
+        <!-- Header - Fixed Top Bar -->
+        <header class="safqa-header" id="home">
+            <div class="container-fluid">
+                <div class="safqa-header-content">
+                    <!-- Logo -->
+                    <div class="safqa-logo-wrapper">
+                        <a href="safqa-ar.html">
+                            <img src="safqa-assets/images/safqa-text-logo.png" alt="صفقة" class="safqa-logo">
+                        </a>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="safqa-nav">
+                        <a href="#home" class="nav-link active">الرئيسية</a>
+                        <a href="#features" class="nav-link">المميزات</a>
+                        <a href="#screenshots" class="nav-link">الشاشات</a>
+                        <a href="#pricing" class="nav-link">الأسعار</a>
+                        <a href="#download" class="nav-link">التطبيق</a>
+                        <a href="#about" class="nav-link">من نحن</a>
+                    </nav>
+
+                    <!-- Actions -->
+                    <div class="safqa-header-actions">
+                        <div class="safqa-lang-switcher">
+                            <a href="safqa-ar.html" class="lang-link active">ع</a>
+                            <a href="safqa-en.html" class="lang-link">EN</a>
+                        </div>
+                        <a href="#download" class="safqa-btn-download">
+                            <i class="fa fa-download"></i>
+                            <span>حمّل التطبيق</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="safqa-mobile-toggle" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Hero Section -->
+        <section class="hero-style1" id="hero">
+            <div class="hero-info">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="hero-title">
+                                <h1 class="gradient-title">إدارة احترافية <span>لمبيعاتك ومدفوعاتك</span></h1>
+                            </div>
+                            <div class="hero-content" style="margin-top: 30px;">
+                                <p>نظام متكامل لإدارة الفواتير والمدفوعات مع مطابقة ذكية للتحويلات البنكية. مصمم خصيصاً للتجار وأصحاب المحلات - يعمل بدون إنترنت!</p>
+                                <a href="#pricing" title="" class="ibt-btn ibt-btn-secondary safqa-btn-primary" style="margin-top: 30px;">
+                                    <span>جرّب مجاناً لمدة شهر</span>
+                                    <i class="icon-arrow-top"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hero-image" style="text-align: center; position: relative; padding: 20px 0;">
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 450px; height: 450px; background: var(--safqa-gradient); opacity: 0.15; border-radius: 50%; filter: blur(80px); z-index: 0;"></div>
+                                <img src="assets/images/hero/hero15-1.png" alt="تطبيق صفقة" style="max-width: 550px; max-height: 550px; width: auto; height: auto; object-fit: contain; position: relative; z-index: 2; filter: drop-shadow(0 20px 60px rgba(0,0,0,0.3));">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Stats Section -->
+        <section style="background: #f9f9f9; padding: 60px 0;">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div style="padding: 20px;">
+                            <div style="width: 80px; height: 80px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-users" style="font-size: 36px; color: var(--safqa-primary);"></i>
+                            </div>
+                            <h3 style="font-size: 48px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">1000+</h3>
+                            <p style="font-size: 18px; color: #666; font-weight: 600;">تاجر نشط</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div style="padding: 20px;">
+                            <div style="width: 80px; height: 80px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-percentage" style="font-size: 36px; color: var(--safqa-primary);"></i>
+                            </div>
+                            <h3 style="font-size: 48px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">95%</h3>
+                            <p style="font-size: 18px; color: #666; font-weight: 600;">دقة المطابقة الذكية</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div style="padding: 20px;">
+                            <div style="width: 80px; height: 80px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-wifi" style="font-size: 36px; color: var(--safqa-primary); transform: rotate(45deg);"></i>
+                            </div>
+                            <h3 style="font-size: 48px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">Offline</h3>
+                            <p style="font-size: 18px; color: #666; font-weight: 600;">يعمل بدون إنترنت</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div style="padding: 20px;">
+                            <div style="width: 80px; height: 80px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-star" style="font-size: 36px; color: var(--safqa-primary);"></i>
+                            </div>
+                            <h3 style="font-size: 48px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">4.5</h3>
+                            <p style="font-size: 18px; color: #666; font-weight: 600;">تقييم التطبيق</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Stats Section -->
+
+        <!-- Features Section -->
+        <section class="ibt-section-gap" id="features">
+            <div class="container">
+                <div class="title-area text-center mb-60">
+                    <span class="sub-title" style="color: var(--safqa-gold); font-size: 16px; font-weight: 600;">المميزات</span>
+                    <h2 style="font-size: 42px; font-weight: 800; margin: 20px 0; color: var(--safqa-primary);">لماذا <span style="background: var(--safqa-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">صفقة</span>؟</h2>
+                    <p style="max-width: 700px; margin: 20px auto 0; font-size: 18px; color: #666; line-height: 1.7;">حل شامل لتتبع الفواتير وإدارة العملاء ومطابقة التحويلات البنكية بشكل ذكي وآلي</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="safqa-feature-card">
+                            <div class="safqa-feature-icon">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <h4>إدارة الفواتير والمبيعات</h4>
+                            <p>إنشاء فواتير بسهولة وسرعة، تتبع حالة كل فاتورة (مدفوعة / معلقة / جزئية)، وتقارير المبيعات اليومية والشهرية.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="safqa-feature-card">
+                            <div class="safqa-feature-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4>مطابقة التحويلات البنكية الذكية</h4>
+                            <p>استيراد كشوفات البنك (PDF, CSV, Excel)، مطابقة أوتوماتيكية ذكية بين التحويلات والفواتير بدقة تصل إلى 95%.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="safqa-feature-card">
+                            <div class="safqa-feature-icon">
+                                <i class="fas fa-address-book"></i>
+                            </div>
+                            <h4>إدارة العملاء</h4>
+                            <p>قاعدة بيانات شاملة للعملاء، معلومات التواصل (هاتف، عنوان، ملاحظات)، وسجل كامل لجميع معاملات كل عميل.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="safqa-feature-card">
+                            <div class="safqa-feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>نظام محاسبي واضح</h4>
+                            <p>تسجيل الديون والإيداعات بدقة، حساب الرصيد المتبقي تلقائياً، وتنبيهات للديون المتأخرة مع كشف حساب تفصيلي.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="safqa-feature-card">
+                            <div class="safqa-feature-icon">
+                                <i class="fas fa-plane" style="transform: rotate(-45deg);"></i>
+                            </div>
+                            <h4>يعمل بدون إنترنت</h4>
+                            <p>Offline First - جميع الوظائف تعمل بدون إنترنت! مثالي للمناطق ذات الانقطاع المتكرر، مع مزامنة تلقائية عند توفر الإنترنت.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="safqa-feature-card">
+                            <div class="safqa-feature-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>أمن البيانات والخصوصية</h4>
+                            <p>تشفير البيانات على الجهاز، حماية بكلمة مرور أو بصمة، وبياناتك لا تُرسل لأي سيرفر خارجي - التحكم الكامل في خصوصيتك.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Features Section -->
+
+        <!-- How It Works Section -->
+        <section class="ibt-section-gap" style="background: #f9f9f9; padding: 100px 0;">
+            <div class="container">
+                <div class="title-area text-center mb-60">
+                    <span class="sub-title" style="color: var(--safqa-gold); font-size: 16px; font-weight: 600;">كيف يعمل</span>
+                    <h2 style="font-size: 42px; font-weight: 800; margin: 20px 0; color: var(--safqa-primary);">ابدأ إدارة أعمالك <span style="background: var(--safqa-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">في ثلاث خطوات</span></h2>
+                    <p style="max-width: 700px; margin: 20px auto 0; font-size: 18px; color: #666;">الأمر بسيط جداً! حمّل التطبيق وابدأ في تنظيم مبيعاتك</p>
+                </div>
+
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-4 text-center">
+                        <div style="padding: 40px 20px;">
+                            <div style="width: 100px; height: 100px; margin: 0 auto 25px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 48px; font-weight: 700; color: var(--safqa-primary);">1</div>
+                            <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 15px; color: var(--safqa-primary);">حمّل التطبيق</h4>
+                            <p style="color: #666;">قم بتحميل تطبيق صفقة مجاناً من متجر جوجل بلاي وأنشئ حسابك في دقائق معدودة</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+                        <div style="padding: 40px 20px;">
+                            <div style="width: 100px; height: 100px; margin: 0 auto 25px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 48px; font-weight: 700; color: var(--safqa-primary);">2</div>
+                            <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 15px; color: var(--safqa-primary);">أضف عملائك وفواتيرك</h4>
+                            <p style="color: #666;">ابدأ بإضافة قاعدة بيانات عملائك وإنشاء فواتيرك، التطبيق يعمل حتى بدون إنترنت</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+                        <div style="padding: 40px 20px;">
+                            <div style="width: 100px; height: 100px; margin: 0 auto 25px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 48px; font-weight: 700; color: var(--safqa-primary);">3</div>
+                            <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 15px; color: var(--safqa-primary);">طابق التحويلات تلقائياً</h4>
+                            <p style="color: #666;">ارفع كشف حسابك البنكي ودع النظام يطابق التحويلات مع الفواتير بدقة 95%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End How It Works Section -->
+
+        <!-- Screenshots Section -->
+        <section class="ibt-section-gap" id="screenshots" style="background: #fff; padding: 100px 0;">
+            <div class="container">
+                <div class="title-area text-center mb-60">
+                    <span class="sub-title" style="color: var(--safqa-gold); font-size: 16px; font-weight: 600;">لقطات الشاشة</span>
+                    <h2 style="font-size: 42px; font-weight: 800; margin: 20px 0; color: var(--safqa-primary);">شاهد <span style="background: var(--safqa-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">التطبيق</span> عن قرب</h2>
+                    <p style="max-width: 700px; margin: 20px auto 0; font-size: 18px; color: #666; line-height: 1.7;">تصفح واجهات التطبيق وتعرف على المميزات بشكل مباشر</p>
+                </div>
+
+                <!-- Screenshots Carousel -->
+                <div class="safqa-screenshots-wrapper" style="position: relative; padding: 40px 0;">
+                    <div class="swiper safqa-screenshots-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Screenshot 1 - Splash Screen -->
+                            <div class="swiper-slide">
+                                <div class="screenshot-item" style="text-align: center;">
+                                    <div class="phone-frame" style="position: relative; display: inline-block; max-width: 360px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 280px; height: 500px; background: var(--safqa-gradient); opacity: 0.08; border-radius: 50%; filter: blur(70px); z-index: 0;"></div>
+                                        <img src="safqa-assets/images/screenshots/screenshot-1.png" alt="شاشة البداية" style="width: 100%; height: auto; border-radius: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); position: relative; z-index: 2;">
+                                    </div>
+                                    <h4 style="font-size: 20px; font-weight: 700; margin-top: 25px; color: var(--safqa-primary);">شاشة البداية</h4>
+                                    <p style="color: #666; font-size: 15px; margin-top: 10px;">واجهة ترحيبية احترافية</p>
+                                </div>
+                            </div>
+
+                            <!-- Screenshot 2 - Dashboard -->
+                            <div class="swiper-slide">
+                                <div class="screenshot-item" style="text-align: center;">
+                                    <div class="phone-frame" style="position: relative; display: inline-block; max-width: 360px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 280px; height: 500px; background: var(--safqa-gradient); opacity: 0.08; border-radius: 50%; filter: blur(70px); z-index: 0;"></div>
+                                        <img src="safqa-assets/images/screenshots/screenshot-2.png" alt="لوحة التحكم" style="width: 100%; height: auto; border-radius: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); position: relative; z-index: 2;">
+                                    </div>
+                                    <h4 style="font-size: 20px; font-weight: 700; margin-top: 25px; color: var(--safqa-primary);">لوحة التحكم</h4>
+                                    <p style="color: #666; font-size: 15px; margin-top: 10px;">نظرة شاملة على العمليات</p>
+                                </div>
+                            </div>
+
+                            <!-- Screenshot 3 - Invoices -->
+                            <div class="swiper-slide">
+                                <div class="screenshot-item" style="text-align: center;">
+                                    <div class="phone-frame" style="position: relative; display: inline-block; max-width: 360px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 280px; height: 500px; background: var(--safqa-gradient); opacity: 0.08; border-radius: 50%; filter: blur(70px); z-index: 0;"></div>
+                                        <img src="safqa-assets/images/screenshots/screenshot-3.png" alt="إدارة الفواتير" style="width: 100%; height: auto; border-radius: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); position: relative; z-index: 2;">
+                                    </div>
+                                    <h4 style="font-size: 20px; font-weight: 700; margin-top: 25px; color: var(--safqa-primary);">إدارة الفواتير</h4>
+                                    <p style="color: #666; font-size: 15px; margin-top: 10px;">إنشاء وتتبع الفواتير</p>
+                                </div>
+                            </div>
+
+                            <!-- Screenshot 4 - Customers -->
+                            <div class="swiper-slide">
+                                <div class="screenshot-item" style="text-align: center;">
+                                    <div class="phone-frame" style="position: relative; display: inline-block; max-width: 360px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 280px; height: 500px; background: var(--safqa-gradient); opacity: 0.08; border-radius: 50%; filter: blur(70px); z-index: 0;"></div>
+                                        <img src="safqa-assets/images/screenshots/screenshot-4.png" alt="إدارة العملاء" style="width: 100%; height: auto; border-radius: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); position: relative; z-index: 2;">
+                                    </div>
+                                    <h4 style="font-size: 20px; font-weight: 700; margin-top: 25px; color: var(--safqa-primary);">إدارة العملاء</h4>
+                                    <p style="color: #666; font-size: 15px; margin-top: 10px;">متابعة كل عميل</p>
+                                </div>
+                            </div>
+
+                            <!-- Screenshot 5 - Reports -->
+                            <div class="swiper-slide">
+                                <div class="screenshot-item" style="text-align: center;">
+                                    <div class="phone-frame" style="position: relative; display: inline-block; max-width: 360px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 280px; height: 500px; background: var(--safqa-gradient); opacity: 0.08; border-radius: 50%; filter: blur(70px); z-index: 0;"></div>
+                                        <img src="safqa-assets/images/screenshots/screenshot-5.png" alt="التقارير" style="width: 100%; height: auto; border-radius: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); position: relative; z-index: 2;">
+                                    </div>
+                                    <h4 style="font-size: 20px; font-weight: 700; margin-top: 25px; color: var(--safqa-primary);">التقارير والإحصائيات</h4>
+                                    <p style="color: #666; font-size: 15px; margin-top: 10px;">تحليلات دقيقة</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination" style="margin-top: 40px;"></div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <div class="swiper-button-prev safqa-arrow-prev" style="color: var(--safqa-primary); background: #fff; width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 5px 20px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; left: -25px;"></div>
+                    <div class="swiper-button-next safqa-arrow-next" style="color: var(--safqa-primary); background: #fff; width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 5px 20px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; right: -25px;"></div>
+                </div>
+            </div>
+        </section>
+        <!-- End Screenshots Section -->
+
+        <!-- Download Section -->
+        <section class="safqa-download-section" id="download">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <span class="sub-title" style="color: var(--safqa-secondary); font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">حمّل التطبيق</span>
+                        <h2 style="font-size: 48px; font-weight: 800; margin: 25px 0; color: #fff; line-height: 1.2;">ابدأ إدارة أعمالك احترافياً</h2>
+                        <p style="font-size: 20px; color: rgba(255,255,255,0.85); margin-bottom: 35px; line-height: 1.7;">انضم لأكثر من 1000 تاجر يستخدمون صفقة لإدارة مبيعاتهم ومدفوعاتهم. جرّب التطبيق مجاناً لمدة شهر كامل!</p>
+
+                        <div class="safqa-download-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.wiztech.safqa" target="_blank" class="safqa-download-btn" style="box-shadow: 0 10px 40px rgba(248, 197, 69, 0.3);">
+                                <i class="fab fa-google-play"></i>
+                                <div class="btn-text">
+                                    <small>متوفر على</small>
+                                    <span>Google Play</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div style="margin-top: 45px;">
+                            <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <span style="color: rgba(255,255,255,0.9); font-size: 15px;">مجاني لشهر كامل</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <span style="color: rgba(255,255,255,0.9); font-size: 15px;">بدون إعلانات</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <span style="color: rgba(255,255,255,0.9); font-size: 15px;">يعمل بدون إنترنت</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 35px; align-items: center; flex-wrap: wrap;">
+                                <div>
+                                    <i class="fa fa-star" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <i class="fa fa-star" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <i class="fa fa-star" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <i class="fa fa-star" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <i class="fa fa-star-half-alt" style="color: var(--safqa-secondary); font-size: 18px;"></i>
+                                    <span style="color: #fff; margin-right: 10px; font-weight: 700; font-size: 16px;">4.5 من 5</span>
+                                </div>
+                                <div style="color: rgba(255,255,255,0.8); font-size: 15px; font-weight: 600;">
+                                    <i class="fa fa-download" style="color: var(--safqa-secondary); margin-left: 8px;"></i>
+                                    +1,000 تحميل
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+                        <div style="position: relative;">
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 350px; height: 350px; background: var(--safqa-gradient); opacity: 0.15; border-radius: 50%; filter: blur(60px);"></div>
+                            <img src="safqa-assets/images/app-mockup.png" alt="تطبيق صفقة" style="max-width: 450px; width: 100%; height: auto; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.4)); position: relative; z-index: 2;" onerror="this.src='safqa-assets/images/safqa-logo.png'; this.style.maxWidth='300px';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Download Section -->
+
+        <!-- About Section -->
+        <section class="ibt-section-gap" id="about" style="background: #fff;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <span class="sub-title" style="color: var(--safqa-gold); font-size: 16px; font-weight: 600; display: block; margin-bottom: 15px;">من نحن</span>
+                        <h2 style="font-size: 42px; font-weight: 800; margin-bottom: 25px; color: var(--safqa-primary);">النظام الأمثل لإدارة أعمالك</h2>
+                        <p style="font-size: 18px; line-height: 1.8; color: #555; margin-bottom: 20px;">صفقة هو تطبيق متكامل لإدارة المبيعات والمدفوعات، مصمم خصيصاً للتجار وأصحاب المحلات التجارية في فلسطين. يوفر التطبيق حلاً شاملاً لتتبع الفواتير، إدارة العملاء، ومطابقة التحويلات البنكية بشكل ذكي وآلي.</p>
+                        <p style="font-size: 18px; line-height: 1.8; color: #555; margin-bottom: 25px;">نوفر لك نظام محاسبي واضح لكل عميل، مع إمكانية العمل بدون إنترنت (Offline First)، وخصوصية كاملة لبياناتك - فكل معلوماتك تبقى على جهازك دون الحاجة لسيرفر خارجي.</p>
+                        <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 35px; flex-wrap: wrap;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 36px; font-weight: 700; color: var(--safqa-secondary);">مجاني</div>
+                                <div style="font-size: 14px; color: #666;">لمدة شهر</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 36px; font-weight: 700; color: var(--safqa-secondary);">Offline</div>
+                                <div style="font-size: 14px; color: #666;">يعمل بدون نت</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 36px; font-weight: 700; color: var(--safqa-secondary);">آمن</div>
+                                <div style="font-size: 14px; color: #666;">100%</div>
+                            </div>
+                        </div>
+                        <a href="#pricing" class="ibt-btn ibt-btn-secondary safqa-btn-primary" style="font-size: 16px; padding: 16px 35px;">
+                            <span>اطلع على الأسعار</span>
+                            <i class="icon-arrow-top"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div style="background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%); padding: 35px 25px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; transition: all 0.3s ease;">
+                                    <div style="width: 70px; height: 70px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fa fa-users" style="font-size: 32px; color: var(--safqa-primary);"></i></div>
+                                    <div style="font-size: 44px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">1000+</div>
+                                    <div style="font-weight: 600; color: #666; font-size: 16px;">تاجر نشط</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div style="background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%); padding: 35px 25px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; transition: all 0.3s ease;">
+                                    <div style="width: 70px; height: 70px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fa fa-percentage" style="font-size: 32px; color: var(--safqa-primary);"></i></div>
+                                    <div style="font-size: 44px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">95%</div>
+                                    <div style="font-weight: 600; color: #666; font-size: 16px;">دقة المطابقة</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div style="background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%); padding: 35px 25px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; transition: all 0.3s ease;">
+                                    <div style="width: 70px; height: 70px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fa fa-wifi" style="font-size: 32px; color: var(--safqa-primary); transform: rotate(45deg);"></i></div>
+                                    <div style="font-size: 36px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">Offline</div>
+                                    <div style="font-weight: 600; color: #666; font-size: 16px;">يعمل بدون نت</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div style="background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%); padding: 35px 25px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; transition: all 0.3s ease;">
+                                    <div style="width: 70px; height: 70px; margin: 0 auto 20px; background: var(--safqa-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fa fa-star" style="font-size: 32px; color: var(--safqa-primary);"></i></div>
+                                    <div style="font-size: 44px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 10px;">4.5</div>
+                                    <div style="font-weight: 600; color: #666; font-size: 16px;">تقييم التطبيق</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Pricing Section -->
+        <section class="ibt-section-gap" id="pricing" style="background: var(--safqa-primary); padding: 100px 0;">
+            <div class="container">
+                <div class="title-area text-center mb-60">
+                    <span class="sub-title" style="color: var(--safqa-secondary); font-size: 16px; font-weight: 600;">الأسعار والخطط</span>
+                    <h2 style="font-size: 42px; font-weight: 800; margin: 20px 0; color: #fff;">اختر الخطة <span style="background: var(--safqa-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">المناسبة لك</span></h2>
+                    <p style="max-width: 700px; margin: 20px auto 0; font-size: 18px; color: rgba(255,255,255,0.85);">عرض محدود! جرّب التطبيق مجاناً لمدة شهر، ثم احصل على خصم الانطلاق على الاشتراكات</p>
+                </div>
+
+                <div class="row g-4 justify-content-center" style="margin-top: 60px;">
+                    <!-- Free Trial -->
+                    <div class="col-lg-4 col-md-6">
+                        <div style="background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%); padding: 45px 35px; border-radius: 25px; box-shadow: 0 15px 50px rgba(0,0,0,0.15); position: relative; border: 2px solid rgba(248, 197, 69, 0.3); text-align: center;">
+                            <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--safqa-gradient); color: var(--safqa-primary); padding: 8px 25px; border-radius: 20px; font-weight: 700; font-size: 14px; box-shadow: 0 5px 15px rgba(248, 197, 69, 0.4);">الأكثر شعبية</div>
+                            <h3 style="font-size: 28px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 15px; margin-top: 20px;">تجربة مجانية</h3>
+                            <div style="margin: 30px 0;">
+                                <div style="font-size: 52px; font-weight: 800; color: var(--safqa-primary); line-height: 1;">مجاناً</div>
+                                <div style="font-size: 16px; color: #666; margin-top: 10px;">لمدة شهر كامل</div>
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 30px 0; text-align: right;">
+                                <li style="padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">جميع المميزات متاحة</span>
+                                </li>
+                                <li style="padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">لا يتطلب بطاقة ائتمانية</span>
+                                </li>
+                                <li style="padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">دعم فني كامل</span>
+                                </li>
+                                <li style="padding: 12px 0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">يعمل بدون إنترنت</span>
+                                </li>
+                            </ul>
+                            <a href="#download" class="ibt-btn ibt-btn-secondary safqa-btn-primary" style="width: 100%; justify-content: center; font-size: 16px; padding: 16px 30px; margin-top: 20px;">
+                                <span>ابدأ التجربة المجانية</span>
+                                <i class="icon-arrow-top"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Monthly Plan -->
+                    <div class="col-lg-4 col-md-6">
+                        <div style="background: #fff; padding: 45px 35px; border-radius: 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 2px solid #f0f0f0; text-align: center;">
+                            <h3 style="font-size: 28px; font-weight: 800; color: var(--safqa-primary); margin-bottom: 15px;">الاشتراك الشهري</h3>
+                            <div style="margin: 30px 0;">
+                                <div style="display: flex; align-items: baseline; justify-content: center; gap: 10px;">
+                                    <span style="font-size: 24px; color: #999; text-decoration: line-through;">$20</span>
+                                    <span style="font-size: 52px; font-weight: 800; color: var(--safqa-primary);">$15</span>
+                                    <span style="font-size: 18px; color: #666;">/شهر</span>
+                                </div>
+                                <div style="background: rgba(248, 197, 69, 0.15); color: var(--safqa-gold); padding: 8px 15px; border-radius: 8px; font-weight: 600; font-size: 14px; margin-top: 15px; display: inline-block;">وفّر 25% - عرض الانطلاق</div>
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 30px 0; text-align: right;">
+                                <li style="padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">جميع المميزات الأساسية</span>
+                                </li>
+                                <li style="padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">مطابقة ذكية للتحويلات</span>
+                                </li>
+                                <li style="padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">نسخ احتياطي سحابي</span>
+                                </li>
+                                <li style="padding: 12px 0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: #555; font-size: 15px; flex: 1;">دعم فني ذو أولوية</span>
+                                </li>
+                            </ul>
+                            <a href="#download" class="ibt-btn safqa-btn-outline" style="width: 100%; justify-content: center; font-size: 16px; padding: 16px 30px; margin-top: 20px;">
+                                <span>اشترك شهرياً</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Yearly Plan -->
+                    <div class="col-lg-4 col-md-6">
+                        <div style="background: linear-gradient(135deg, var(--safqa-primary) 0%, #0d1f23 100%); padding: 45px 35px; border-radius: 25px; box-shadow: 0 20px 60px rgba(24, 53, 58, 0.4); border: 3px solid var(--safqa-secondary); position: relative; text-align: center;">
+                            <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--safqa-gradient); color: var(--safqa-primary); padding: 8px 25px; border-radius: 20px; font-weight: 700; font-size: 14px; box-shadow: 0 5px 15px rgba(248, 197, 69, 0.4);">الأفضل قيمة 🔥</div>
+                            <h3 style="font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 15px; margin-top: 20px;">الاشتراك السنوي</h3>
+                            <div style="margin: 30px 0;">
+                                <div style="display: flex; align-items: baseline; justify-content: center; gap: 10px;">
+                                    <span style="font-size: 24px; color: rgba(255,255,255,0.5); text-decoration: line-through;">$200</span>
+                                    <span style="font-size: 52px; font-weight: 800; color: var(--safqa-secondary);">$120</span>
+                                    <span style="font-size: 18px; color: rgba(255,255,255,0.8);">/سنة</span>
+                                </div>
+                                <div style="background: var(--safqa-gradient); color: var(--safqa-primary); padding: 8px 15px; border-radius: 8px; font-weight: 700; font-size: 14px; margin-top: 15px; display: inline-block;">وفّر 40% - أفضل عرض!</div>
+                                <div style="color: rgba(255,255,255,0.7); font-size: 14px; margin-top: 10px;">$10 فقط في الشهر</div>
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 30px 0; text-align: right;">
+                                <li style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: rgba(255,255,255,0.9); font-size: 15px; flex: 1;">جميع مميزات الخطة الشهرية</span>
+                                </li>
+                                <li style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: rgba(255,255,255,0.9); font-size: 15px; flex: 1;">خصم 40% على السعر الأصلي</span>
+                                </li>
+                                <li style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: rgba(255,255,255,0.9); font-size: 15px; flex: 1;">أولوية في الدعم الفني</span>
+                                </li>
+                                <li style="padding: 12px 0; display: flex; align-items: start; gap: 12px;">
+                                    <i class="fa fa-check-circle" style="color: var(--safqa-secondary); font-size: 20px; margin-top: 2px;"></i>
+                                    <span style="color: rgba(255,255,255,0.9); font-size: 15px; flex: 1;">تحديثات مجانية طوال السنة</span>
+                                </li>
+                            </ul>
+                            <a href="#download" class="ibt-btn ibt-btn-secondary safqa-btn-primary" style="width: 100%; justify-content: center; font-size: 16px; padding: 16px 30px; margin-top: 20px; background: var(--safqa-gradient) !important; box-shadow: 0 10px 30px rgba(248, 197, 69, 0.3);">
+                                <span>اشترك سنوياً ووفّر 40%</span>
+                                <i class="icon-arrow-top"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 50px;">
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px; max-width: 600px; margin: 0 auto;">
+                        <i class="fa fa-shield-alt" style="color: var(--safqa-secondary); margin-left: 8px;"></i>
+                        جميع الخطط تشمل: تشفير البيانات • نسخ احتياطي • يعمل بدون إنترنت • بدون إعلانات
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- End Pricing Section -->
+
+
+        <!-- Footer -->
+        <footer class="footer-style1">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="about-widget footer-widget">
+                                    <div class="footer-logo">
+                                        <a href="safqa-ar.html"><img src="safqa-assets/images/safqa-text-logo.png" alt="صفقة"></a>
+                                    </div>
+                                    <p style="color: rgba(255, 255, 255, 0.8) !important;">نظام متكامل لإدارة المبيعات والمدفوعات. مصمم خصيصاً للتجار وأصحاب المحلات التجارية مع إمكانية العمل بدون إنترنت.</p>
+                                    <ul class="social-icon">
+                                        <li><a href="#" title="فيسبوك"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" title="تويتر"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#" title="إنستغرام"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#" title="سناب شات"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6">
+                                <div class="footer-menu">
+                                    <div class="footer-links footer-widget">
+                                        <h4 class="title">روابط سريعة</h4>
+                                        <ul>
+                                            <li><a href="#home">الرئيسية</a></li>
+                                            <li><a href="#features">المميزات</a></li>
+                                            <li><a href="#download">تحميل التطبيق</a></li>
+                                            <li><a href="#about">من نحن</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-links footer-widget">
+                                    <h4 class="title">الدعم</h4>
+                                    <ul>
+                                        <li><a href="#">مركز المساعدة</a></li>
+                                        <li><a href="#">الأسئلة الشائعة</a></li>
+                                        <li><a href="#">الشروط والأحكام</a></li>
+                                        <li><a href="#">سياسة الخصوصية</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-links footer-widget">
+                                    <h4 class="title">تواصل معنا</h4>
+                                    <ul>
+                                        <li><a href="mailto:info@wiz-tech.co"><i class="fa fa-envelope" style="margin-left: 8px;"></i>info@wiz-tech.co</a></li>
+                                        <li><a href="tel:+970595151005"><i class="fa fa-phone" style="margin-left: 8px;"></i>+970 595 151 005</a></li>
+                                        <li><i class="fa fa-map-marker-alt" style="margin-left: 8px;"></i>غزة، فلسطين</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-botom">
+                <div class="container">
+                    <div class="footer-box">
+                        <p>© 2024 صفقة. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+
+    <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            document.querySelector('.side-menu2').classList.toggle('active');
+            document.querySelector('.overlay2').classList.toggle('active');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.side-menu2 a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.side-menu2').classList.remove('active');
+                document.querySelector('.overlay2').classList.remove('active');
+            });
+        });
+
+        // Active nav link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll('.safqa-nav .nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Initialize Screenshots Swiper
+        document.addEventListener('DOMContentLoaded', function() {
+            const screenshotsSwiper = new Swiper('.safqa-screenshots-slider', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: '.safqa-arrow-next',
+                    prevEl: '.safqa-arrow-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
