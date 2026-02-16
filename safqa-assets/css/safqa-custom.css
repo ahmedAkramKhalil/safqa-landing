@@ -22,20 +22,35 @@ body {
 }
 
 /* Arabic Font - Tajawal */
-[dir="rtl"] body,
-[dir="rtl"] h1,
-[dir="rtl"] h2,
-[dir="rtl"] h3,
-[dir="rtl"] h4,
-[dir="rtl"] h5,
-[dir="rtl"] h6,
-[dir="rtl"] p,
-[dir="rtl"] a,
-[dir="rtl"] li,
-[dir="rtl"] span,
-[dir="rtl"] button,
-[dir="rtl"] input,
-[dir="rtl"] textarea {
+[dir="rtl"],
+[dir="rtl"] * {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+body[dir="rtl"] {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+/* Ensure all text elements use Tajawal in RTL */
+html[lang="ar"] *,
+html[lang="ar"] body,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6,
+html[lang="ar"] p,
+html[lang="ar"] a,
+html[lang="ar"] li,
+html[lang="ar"] span,
+html[lang="ar"] div,
+html[lang="ar"] button,
+html[lang="ar"] input,
+html[lang="ar"] textarea,
+html[lang="ar"] .nav-link,
+html[lang="ar"] .title,
+html[lang="ar"] .gradient-title {
     font-family: 'Tajawal', sans-serif !important;
 }
 
@@ -796,4 +811,48 @@ section .sub-title {
     .screenshot-item p {
         font-size: 14px !important;
     }
+}
+
+/* ============================================
+   FORCE TAJAWAL FONT - HIGHEST PRIORITY
+   ============================================ */
+
+/* Apply Tajawal to all elements on Arabic page */
+html[lang="ar"] {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+html[lang="ar"] body,
+html[lang="ar"] *,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6,
+html[lang="ar"] p,
+html[lang="ar"] a,
+html[lang="ar"] button,
+html[lang="ar"] input,
+html[lang="ar"] textarea,
+html[lang="ar"] select,
+html[lang="ar"] label,
+html[lang="ar"] span,
+html[lang="ar"] div,
+html[lang="ar"] li,
+html[lang="ar"] .hero-title,
+html[lang="ar"] .gradient-title,
+html[lang="ar"] .nav-link,
+html[lang="ar"] .title,
+html[lang="ar"] .sub-title,
+html[lang="ar"] .safqa-btn-primary,
+html[lang="ar"] .footer-widget,
+html[lang="ar"] .menu-item {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+/* Override any theme fonts */
+.safqa-page[dir="rtl"],
+.safqa-page[dir="rtl"] * {
+    font-family: 'Tajawal', sans-serif !important;
 }
