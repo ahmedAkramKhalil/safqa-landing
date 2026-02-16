@@ -21,6 +21,24 @@ body {
     --clr-theme-secondary: var(--safqa-secondary);
 }
 
+/* Arabic Font - Tajawal */
+[dir="rtl"] body,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] p,
+[dir="rtl"] a,
+[dir="rtl"] li,
+[dir="rtl"] span,
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
 /* Logo styling moved to safqa-header.css for header */
 /* Keep only footer logo styles here */
 
@@ -111,14 +129,15 @@ section .sub-title {
 }
 
 .hero-style1 .hero-info {
-    padding: 60px 0 60px; /* Reduced top padding */
+    padding: 100px 0 80px; /* Increased padding for more margin */
 }
 
 .hero-style1 .hero-title .gradient-title {
     font-size: 60px;
     font-weight: 800;
     color: #fff;
-    line-height: 1.2;
+    line-height: 1.3;
+    margin-bottom: 30px;
 }
 
 .hero-style1 .hero-title .gradient-title span {
@@ -129,10 +148,11 @@ section .sub-title {
 }
 
 .hero-style1 .hero-content p {
-    font-size: 18px;
+    font-size: 19px;
     color: rgba(255, 255, 255, 0.85);
-    line-height: 1.7;
-    margin-bottom: 30px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .hero-style1 .video-banner {
@@ -184,6 +204,10 @@ section .sub-title {
 
 /* Responsive hero */
 @media (max-width: 991px) {
+    .hero-style1 .hero-info {
+        padding: 80px 0 60px;
+    }
+
     .hero-style1 .hero-title .gradient-title {
         font-size: 42px;
     }
@@ -199,8 +223,19 @@ section .sub-title {
 }
 
 @media (max-width: 767px) {
+    .hero-style1 .hero-info {
+        padding: 60px 0 50px;
+    }
+
     .hero-style1 .hero-title .gradient-title {
         font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .hero-style1 .hero-content p {
+        font-size: 17px;
+        margin-top: 15px;
+        margin-bottom: 25px;
     }
 
     .hero-style1 .video-banner .title2 {
